@@ -34,29 +34,14 @@ matthew-portfolio/
     └── icon-linkedin.png     # Footer social icon
 Running Locally
 
-No build tools or dependencies required.
 
-Option 1 — just open it Double-click index.html, or drag it into a browser window.
-
-Option 2 — local server (recommended)
-
-bash
-python3 -m http.server 8080
-# then open http://localhost:8080
-
-or, with Node:
-
-bash
-npx serve
-Deploying
-
-Drag the whole matthew-portfolio folder into Netlify Drop or a similar static host (Vercel, GitHub Pages, Cloudflare Pages) — no configuration needed.
+Drag the whole matthew-portfolio folder into Netlify Drop or a similar static host (Vercel, GitHub Pages, Cloudflare Pages) no configuration needed.
 
 Customizing
-Content — all text lives directly in index.html.
+Content all text lives directly in index.html.
 Project case studies & lightbox screenshots — edit the data and shots objects near the top of script.js.
-Colors / spacing / fonts — edit the CSS custom properties in the :root block at the top of style.css.
-Replacing an asset — swap the file in assets/ with the same filename, or update the src/href reference in index.html / script.js.
+Colors / spacing / fonts edit the CSS custom properties in the :root block at the top of style.css.
+Replacing an asset swap the file in assets/ with the same filename, or update the src/href reference in index.html / script.js.
 Author
 
 Matthew Nazim Umar Syarif Information Systems student at President University · Data Analyst & Backend Developer GitHub · LinkedIn
