@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matthew Nazim Umar Syarif | Data Analyst & Backend Developer</title>
+<meta name="description" content="Matthew Nazim Umar Syarif - Data Analyst, Backend Developer & Information Systems Student at President University. Turning raw data into insights and building scalable backend systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= LOADER ================= -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">MNUS</div>
+    <div class="loader-bar-track"><div class="loader-bar" id="loaderBar"></div></div>
+    <div class="loader-pct" id="loaderPct">0%</div>
+  </div>
+</div>
+
+<!-- ================= CUSTOM CURSOR ================= -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ================= NOISE / GRID BG ================= -->
+<div class="bg-noise"></div>
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+
+<!-- ================= SCROLL PROGRESS ================= -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav">
+  <a href="#home" class="nav-logo magnetic">MN<span>US</span></a>
+  <div class="nav-links">
+    <a href="#about" class="nav-link magnetic"><span>About</span></a>
+    <a href="#skills" class="nav-link magnetic"><span>Skills</span></a>
+    <a href="#projects" class="nav-link magnetic"><span>Projects</span></a>
+    <a href="#experience" class="nav-link magnetic"><span>Experience</span></a>
+    <a href="#contact" class="nav-link magnetic"><span>Contact</span></a>
+  </div>
+  <a href="#contact" class="btn btn-sm btn-primary magnetic nav-cta"><span>Let's Talk</span></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+  <div class="particles" id="particles"></div>
+
+  <div class="hero-inner container">
+    <div class="hero-left">
+      <div class="eyebrow reveal-up">
+        <span class="dot-live"></span> Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="line" data-line="1">Matthew Nazim</span>
+        <span class="line" data-line="2">Umar Syarif</span>
+      </h1>
+      <p class="hero-subtitle reveal-up" style="--d:0.55s">
+        <span class="pill">Data Analyst</span>
+        <span class="sep">•</span>
+        <span class="pill">Backend Developer</span>
+        <span class="sep">•</span>
+        <span class="pill">Information Systems Student</span>
+      </p>
+      <p class="hero-desc reveal-up" style="--d:0.68s">
+        I transform raw data into meaningful insights and build scalable backend systems that solve real-world business problems.
+      </p>
+      <div class="hero-cta reveal-up" style="--d:0.8s">
+        <a href="#projects" class="btn btn-primary magnetic"><span>View Projects</span><i class="arrow"></i></a>
+        <a href="assets/CV_Matthew_Nazim.pdf" target="_blank" rel="noopener" class="btn btn-ghost magnetic" id="resumeBtn"><span>Download Resume</span></a>
+        <a href="#contact" class="btn btn-text magnetic"><span>Contact Me</span><i class="arrow"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal-scale" style="--d:0.5s">
+      <div class="portrait-frame float-anim">
+        <div class="portrait-glow"></div>
+        <div class="portrait-ring"></div>
+        <div class="portrait-inner">
+          <img class="portrait-photo" src="assets/matthew.jpeg" alt="Matthew Nazim Umar Syarif">
+        </div>
+        <div class="badge-float badge-1">
+          <span class="badge-icon">◆</span> Information Systems
+        </div>
+        <div class="badge-float badge-2">
+          <span class="badge-icon">◆</span> President University
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-row container reveal-up" style="--d:1s">
+    <div class="stat-card tilt-card">
+      <div class="stat-num" data-count="3.69" data-decimals="2">0.00</div>
+      <div class="stat-label">GPA</div>
+    </div>
+    <div class="stat-card tilt-card">
+      <div class="stat-num" data-count="6" data-suffix="+">0</div>
+      <div class="stat-label">Projects</div>
+    </div>
+    <div class="stat-card tilt-card">
+      <div class="stat-num" data-count="2">0</div>
+      <div class="stat-label">Certifications</div>
+    </div>
+    <div class="stat-card tilt-card">
+      <div class="stat-num" data-count="100" data-suffix="+">0</div>
+      <div class="stat-label">Participants Managed</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue magnetic"><span></span></a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="section-eyebrow">01. About</span>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal-left">
+        <p class="about-lead">
+          I'm an <strong>Information Systems student at President University</strong>, currently holding a <strong>3.69 GPA</strong>, with a deep interest in turning messy, real-world data into decisions people can act on.
+        </p>
+        <p class="about-body">
+          My work sits at the intersection of <strong>data analytics</strong> and <strong>backend engineering</strong>. I like being the person who can pull data out of a database, clean it, model it, and then build the very system that stores and serves it. That full-stack view of data is what I bring to every project.
+        </p>
+        <div class="about-focus">
+          <div class="focus-item tilt-card">
+            <div class="focus-icon">◇</div>
+            <div class="focus-name">Data Analytics</div>
+          </div>
+          <div class="focus-item tilt-card">
+            <div class="focus-icon">◆</div>
+            <div class="focus-name">Backend Development</div>
+          </div>
+          <div class="focus-item tilt-card">
+            <div class="focus-icon">▣</div>
+            <div class="focus-name">Database Design</div>
+          </div>
+          <div class="focus-item tilt-card">
+            <div class="focus-icon">⟳</div>
+            <div class="focus-name">Automation</div>
+          </div>
+          <div class="focus-item tilt-card">
+            <div class="focus-icon">◈</div>
+            <div class="focus-name">Business Intelligence</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-timeline reveal-right">
+        <div class="timeline-line"></div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card tilt-card">
+            <div class="timeline-year">2023 - Present</div>
+            <div class="timeline-title">Information Systems, President University</div>
+            <div class="timeline-desc">GPA 3.69 · Focused on data analytics, backend systems &amp; database design.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card tilt-card">
+            <div class="timeline-year">Organizational</div>
+            <div class="timeline-title">Vice Project Manager, PURD Goes to School</div>
+            <div class="timeline-desc">Led planning &amp; execution of a student-run outreach program.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card tilt-card">
+            <div class="timeline-year">Organizational</div>
+            <div class="timeline-title">PIC, Event Organizer</div>
+            <div class="timeline-desc">Managed logistics &amp; coordination for 100+ participants.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="section-eyebrow">02. Skills</span>
+      <h2 class="section-title">What I Work With</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal-up" style="--d:0s">
+        <div class="skill-cat-head">
+          <span class="skill-cat-icon">◇</span>
+          <h3>Data Analytics</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row" data-pct="85">
+            <div class="skill-row-top"><span>Python</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="80">
+            <div class="skill-row-top"><span>SQL (BigQuery)</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="88">
+            <div class="skill-row-top"><span>Excel</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="75">
+            <div class="skill-row-top"><span>Looker Studio</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="78">
+            <div class="skill-row-top"><span>Dashboarding</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-up" style="--d:0.1s">
+        <div class="skill-cat-head">
+          <span class="skill-cat-icon">◆</span>
+          <h3>Backend</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row" data-pct="80">
+            <div class="skill-row-top"><span>PHP</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="85">
+            <div class="skill-row-top"><span>MySQL</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="82">
+            <div class="skill-row-top"><span>CRUD Systems</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="78">
+            <div class="skill-row-top"><span>Database Design</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="72">
+            <div class="skill-row-top"><span>API Integration</span><span class="skill-pct">72%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-up" style="--d:0.2s">
+        <div class="skill-cat-head">
+          <span class="skill-cat-icon">◈</span>
+          <h3>Soft Skills</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row" data-pct="88">
+            <div class="skill-row-top"><span>Leadership</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="90">
+            <div class="skill-row-top"><span>Communication</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="84">
+            <div class="skill-row-top"><span>Project Management</span><span class="skill-pct">84%</span></div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="section-eyebrow">03. Projects</span>
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-hint"><span class="drag-icon">⇔</span> Drag or use the arrows to explore</p>
+    </div>
+  </div>
+
+  <div class="carousel-wrap">
+    <button class="carousel-nav carousel-nav-prev magnetic" id="carouselPrev" aria-label="Previous project">‹</button>
+    <button class="carousel-nav carousel-nav-next magnetic" id="carouselNext" aria-label="Next project">›</button>
+    <div class="carousel-track" id="carouselTrack">
+
+      <article class="project-card" data-project="2">
+        <div class="project-media" data-shots="2">
+          <div class="project-media-inner gradient-2">
+            <div class="mock-window mock-window-wide">
+              <div class="mock-dots"><span></span><span></span><span></span></div>
+              <div class="mock-dash">
+                <div class="mock-kpi"></div>
+                <div class="mock-kpi"></div>
+                <div class="mock-bars">
+                  <span style="height:45%"></span><span style="height:75%"></span><span style="height:30%"></span><span style="height:60%"></span><span style="height:85%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag">Full-Stack</span>
+          <button class="media-expand magnetic" aria-label="View screenshots"><span>⤢</span></button>
+        </div>
+        <div class="project-body">
+          <h3>MJ Salon AIS System</h3>
+          <p class="project-role">Full-Stack Developer</p>
+          <p class="project-desc">A web-based accounting information system for a salon business, covering daily revenue, operational expenses, customer records and financial reporting in one dashboard.</p>
+          <div class="project-badges">
+            <span class="badge">PHP</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Accounting</span>
+            <span class="badge">Dashboard</span>
+          </div>
+          <button class="project-expand magnetic" data-open="2"><span>View Case Study</span><i class="arrow"></i></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-project="3">
+        <div class="project-media" data-shots="3">
+          <div class="project-media-inner gradient-3">
+            <div class="mock-window">
+              <div class="mock-dots"><span></span><span></span><span></span></div>
+              <div class="mock-dash">
+                <div class="mock-kpi"></div>
+                <div class="mock-kpi"></div>
+                <div class="mock-bars">
+                  <span style="height:40%"></span><span style="height:70%"></span><span style="height:55%"></span><span style="height:90%"></span><span style="height:35%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag">Dashboard</span>
+          <button class="media-expand magnetic" aria-label="View screenshots"><span>⤢</span></button>
+        </div>
+        <div class="project-body">
+          <h3>DVD Rental Dashboard</h3>
+          <p class="project-role">Business Reporting</p>
+          <p class="project-desc">Interactive Streamlit dashboard turning a MySQL rental database into rental-trend business insights.</p>
+          <div class="project-badges">
+            <span class="badge">Streamlit</span>
+            <span class="badge">Python</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Dashboard</span>
+          </div>
+          <button class="project-expand magnetic" data-open="3"><span>View Case Study</span><i class="arrow"></i></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-project="4">
+        <div class="project-media" data-shots="4">
+          <div class="project-media-inner gradient-4">
+            <div class="mock-window mock-window-wide">
+              <div class="mock-dots"><span></span><span></span><span></span></div>
+              <div class="mock-docker">
+                <div class="docker-stack">
+                  <div class="docker-box">app</div>
+                  <div class="docker-box">api</div>
+                  <div class="docker-box">db</div>
+                </div>
+                <div class="docker-arrow">→</div>
+                <div class="docker-whale">🐳</div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag">DevOps</span>
+          <button class="media-expand magnetic" aria-label="View screenshots"><span>⤢</span></button>
+        </div>
+        <div class="project-body">
+          <h3>Mattel Supply Chain: Dockerized Analytics</h3>
+          <p class="project-role">Data Engineering Case Study</p>
+          <p class="project-desc">Containerized a full data-analytics stack with Docker for a Mattel-inspired supply chain case study, with reproducible environments from ingestion to reporting.</p>
+          <div class="project-badges">
+            <span class="badge">Docker</span>
+            <span class="badge">Python</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Case Study</span>
+          </div>
+          <button class="project-expand magnetic" data-open="4"><span>View Case Study</span><i class="arrow"></i></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-project="5">
+        <div class="project-media" data-shots="5">
+          <div class="project-media-inner gradient-5">
+            <div class="mock-window">
+              <div class="mock-dots"><span></span><span></span><span></span></div>
+              <div class="mock-shield">
+                <div class="shield-icon">🛡</div>
+                <div class="mock-line w80"></div>
+                <div class="mock-line w60"></div>
+                <div class="shield-tags"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag">Education</span>
+          <button class="media-expand magnetic" aria-label="View screenshots"><span>⤢</span></button>
+        </div>
+        <div class="project-body">
+          <h3>CyberAware: Cybercrime Education Platform</h3>
+          <p class="project-role">Full-Stack Developer</p>
+          <p class="project-desc">A public awareness website teaching people to recognize phishing, scams &amp; digital fraud through articles, quizzes and real-case breakdowns.</p>
+          <div class="project-badges">
+            <span class="badge">PHP</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Content CMS</span>
+            <span class="badge">Security</span>
+          </div>
+          <button class="project-expand magnetic" data-open="5"><span>View Case Study</span><i class="arrow"></i></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-project="6">
+        <div class="project-media" data-shots="6">
+          <div class="project-media-inner gradient-6">
+            <div class="mock-phone">
+              <div class="mock-swipe-card sc-back"></div>
+              <div class="mock-swipe-card sc-front">
+                <div class="sc-avatar"></div>
+                <div class="mock-line w60" style="margin:10px auto 0;"></div>
+                <div class="mock-line w80" style="margin:6px auto 0;"></div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag">Mobile / Product</span>
+          <button class="media-expand magnetic" aria-label="View screenshots"><span>⤢</span></button>
+        </div>
+        <div class="project-body">
+          <h3>SwipeJob</h3>
+          <p class="project-role">Product &amp; Backend Concept</p>
+          <p class="project-desc">A LinkedIn-style job platform reimagined as a swipe experience: swipe right to apply, left to pass, with a matching engine underneath.</p>
+          <div class="project-badges">
+            <span class="badge">Mobile UX</span>
+            <span class="badge">Database</span>
+            <span class="badge">Matching Engine</span>
+            <span class="badge">API</span>
+          </div>
+          <button class="project-expand magnetic" data-open="6"><span>View Case Study</span><i class="arrow"></i></button>
+        </div>
+      </article>
+
+      <article class="project-card project-card-more">
+        <div class="more-inner">
+          <div class="more-icon">+</div>
+          <h3>More on GitHub</h3>
+          <p>Explore additional experiments &amp; smaller builds.</p>
+          <a href="https://github.com/ayambakarpakbryan" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic" id="githubMoreBtn"><span>Visit GitHub</span></a>
+        </div>
+      </article>
+
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- Screenshot Lightbox -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <button class="lightbox-close" id="lightboxClose">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <div class="lightbox-stage" id="lightboxStage">
+    <div class="lightbox-track" id="lightboxTrack"></div>
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+  <div class="lightbox-dots" id="lightboxDots"></div>
+  <div class="lightbox-hint">Drag or use arrow keys to browse</div>
+</div>
+
+<!-- ================= TECH STACK / WORKFLOW / TOOLS ================= -->
+<section class="extras" id="extras">
+  <div class="container">
+    <div class="extras-grid">
+
+      <div class="extra-block reveal-up">
+        <span class="section-eyebrow">Featured Stack</span>
+        <div class="tech-orbit">
+          <div class="tech-chip">Python</div>
+          <div class="tech-chip">SQL</div>
+          <div class="tech-chip">MySQL</div>
+          <div class="tech-chip">PHP</div>
+          <div class="tech-chip">BigQuery</div>
+          <div class="tech-chip">Streamlit</div>
+          <div class="tech-chip">Looker Studio</div>
+          <div class="tech-chip">Excel</div>
+        </div>
+      </div>
+
+      <div class="extra-block reveal-up" style="--d:0.1s">
+        <span class="section-eyebrow">Currently Learning</span>
+        <ul class="dot-list">
+          <li><span class="pulse-dot"></span> Advanced data pipeline orchestration</li>
+          <li><span class="pulse-dot"></span> Cloud-based BI architecture</li>
+          <li><span class="pulse-dot"></span> API design patterns</li>
+        </ul>
+      </div>
+
+      <div class="extra-block reveal-up" style="--d:0.2s">
+        <span class="section-eyebrow">My Workflow</span>
+        <ol class="workflow-list">
+          <li><span class="wf-num">1</span> Understand the business question</li>
+          <li><span class="wf-num">2</span> Collect &amp; clean the data</li>
+          <li><span class="wf-num">3</span> Model, query &amp; build</li>
+          <li><span class="wf-num">4</span> Visualize &amp; ship insight</li>
+        </ol>
+      </div>
+
+      <div class="extra-block reveal-up" style="--d:0.3s">
+        <span class="section-eyebrow">Favorite Tools</span>
+        <div class="tool-tags">
+          <span class="tool-tag">VS Code</span>
+          <span class="tool-tag">MySQL Workbench</span>
+          <span class="tool-tag">Looker Studio</span>
+          <span class="tool-tag">Notion</span>
+          <span class="tool-tag">Figma</span>
+        </div>
+      </div>
+
+      <div class="extra-block reveal-up" style="--d:0.4s">
+        <span class="section-eyebrow">Fun Facts</span>
+        <ul class="dot-list">
+          <li><span class="pulse-dot"></span> Debugs better with lo-fi playing</li>
+          <li><span class="pulse-dot"></span> Believes dashboards should tell a story</li>
+          <li><span class="pulse-dot"></span> Based in Bekasi, Indonesia</li>
+        </ul>
+      </div>
+
+      <div class="extra-block reveal-up" style="--d:0.5s">
+        <span class="section-eyebrow">Now Playing</span>
+        <div class="spotify-card">
+          <button class="spotify-art-btn magnetic" id="npPlayBtn" aria-label="Play or pause">
+            <img class="spotify-art" src="assets/album-art.png" alt="Sign Crushes Motorist - Cold album art">
+            <span class="spotify-play-icon" id="npPlayIcon">▶</span>
+          </button>
+          <div class="spotify-info">
+            <div class="spotify-title">Cold</div>
+            <div class="spotify-artist">Sign Crushes Motorist</div>
+            <div class="spotify-bars" id="npBars"><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <audio id="npAudio" src="assets/now-playing.mp3" loop preload="auto"></audio>
+      </div>
+
+    </div>
+
+    <div class="metrics-row reveal-up">
+      <div class="metric tilt-card">
+        <div class="metric-num" data-count="6" data-suffix="+">0</div>
+        <div class="metric-label">Projects Shipped</div>
+      </div>
+      <div class="metric tilt-card">
+        <div class="metric-num" data-count="12" data-suffix="+">0</div>
+        <div class="metric-label">Technologies Used</div>
+      </div>
+      <div class="metric tilt-card">
+        <div class="metric-num" data-count="100" data-suffix="+">0</div>
+        <div class="metric-label">People Impacted</div>
+      </div>
+      <div class="metric tilt-card">
+        <div class="metric-num" data-count="2">0</div>
+        <div class="metric-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section class="certifications" id="certifications">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="section-eyebrow">04. Certifications</span>
+      <h2 class="section-title">Continuous Learning</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card tilt-card reveal-up">
+        <div class="cert-icon">◆</div>
+        <div class="cert-org">Karirnex</div>
+        <div class="cert-name">Data Analyst Bootcamp</div>
+        <div class="cert-desc">Hands-on training in data cleaning, SQL querying &amp; dashboard reporting.</div>
+        <a href="assets/cert-data-analyst.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic cert-btn"><span>View Certificate</span><i class="arrow"></i></a>
+      </div>
+      <div class="cert-card tilt-card reveal-up" style="--d:0.1s">
+        <div class="cert-icon">◇</div>
+        <div class="cert-org">Karirnex</div>
+        <div class="cert-name">Microsoft Excel Bootcamp</div>
+        <div class="cert-desc">Advanced Excel functions, pivot analysis &amp; automated reporting workflows.</div>
+        <a href="assets/cert-excel.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic cert-btn"><span>View Certificate</span><i class="arrow"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="section-eyebrow">05. Experience</span>
+      <h2 class="section-title">Leadership &amp; Organization</h2>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-line"></div>
+      <div class="exp-item exp-left reveal-left">
+        <div class="exp-dot"></div>
+        <div class="exp-card tilt-card">
+          <div class="exp-role">Vice Project Manager</div>
+          <div class="exp-org">PURD Goes to School</div>
+          <p class="exp-desc">Co-led strategic planning and cross-team execution of an outreach program, coordinating volunteers and stakeholders end-to-end.</p>
+        </div>
+      </div>
+      <div class="exp-item exp-right reveal-right">
+        <div class="exp-dot"></div>
+        <div class="exp-card tilt-card">
+          <div class="exp-role">Person in Charge (PIC), Event Organizer</div>
+          <div class="exp-org">Campus Event</div>
+          <p class="exp-desc">Managed on-ground logistics and coordination for an event with 100+ participants, ensuring smooth execution under time pressure.</p>
+        </div>
+      </div>
+      <div class="exp-item exp-left reveal-left">
+        <div class="exp-dot"></div>
+        <div class="exp-card tilt-card">
+          <div class="exp-role">PR External Member</div>
+          <div class="exp-org">Compsphere 2025</div>
+          <p class="exp-desc">Handled external public relations and outreach communication for the event, connecting the organizing team with outside partners.</p>
+        </div>
+      </div>
+      <div class="exp-item exp-right reveal-right">
+        <div class="exp-dot"></div>
+        <div class="exp-card tilt-card">
+          <div class="exp-role">Event Organizer Member</div>
+          <div class="exp-org">Golden Hackathon, UNITAR x President University</div>
+          <p class="exp-desc">Supported event planning and on-ground execution for a collaborative hackathon between UNITAR and President University.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS PLACEHOLDER ================= -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="section-eyebrow">06. Testimonials</span>
+      <h2 class="section-title">What People Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card tilt-card reveal-up">
+        <div class="testi-quote">"</div>
+        <p>Matthew is a fast learner and can quickly pick up new skills in almost anything.</p>
+        <div class="testi-author">Dave Elyada Gerika, VP PURD</div>
+      </div>
+      <div class="testi-card tilt-card reveal-up" style="--d:0.1s">
+        <div class="testi-quote">"</div>
+        <p>He is always punctual when completing tasks and adapts quickly to new environments and situations.</p>
+        <div class="testi-author">Bayu, Member on AI Project</div>
+      </div>
+      <div class="testi-card tilt-card reveal-up" style="--d:0.2s">
+        <div class="testi-quote">"</div>
+        <p>I don't know why, but this guy somehow thrives no matter what situation he's in, haha.</p>
+        <div class="testi-author">Bryan, ERP Student</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal-up center">
+      <span class="section-eyebrow">07. Contact</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
+
+    <div class="contact-grid contact-grid-solo">
+      <div class="contact-glass reveal-up">
+        <a href="mailto:matthew.nazim01@gmail.com" class="contact-row magnetic">
+          <span class="contact-icon">✉</span>
+          <div><div class="contact-label">Email</div><div class="contact-value">matthew.nazim01@gmail.com</div></div>
+        </a>
+        <a href="https://www.linkedin.com/in/matthew-nazim-umar-syarif-58a708325" target="_blank" rel="noopener" class="contact-row magnetic">
+          <span class="contact-icon">in</span>
+          <div><div class="contact-label">LinkedIn</div><div class="contact-value">/in/matthew-nazim-umar-syarif</div></div>
+        </a>
+        <a href="https://github.com/ayambakarpakbryan" target="_blank" rel="noopener" class="contact-row magnetic">
+          <span class="contact-icon">⌥</span>
+          <div><div class="contact-label">GitHub</div><div class="contact-value">/ayambakarpakbryan</div></div>
+        </a>
+        <div class="contact-row">
+          <span class="contact-icon">◎</span>
+          <div><div class="contact-label">Location</div><div class="contact-value">Bekasi, Indonesia</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">MN<span>US</span></div>
+    <div class="footer-socials">
+      <a href="https://github.com/ayambakarpakbryan" target="_blank" rel="noopener" class="magnetic" aria-label="GitHub"><img src="assets/icon-github.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/matthew-nazim-umar-syarif-58a708325" target="_blank" rel="noopener" class="magnetic" aria-label="LinkedIn"><img src="assets/icon-linkedin.png" alt="LinkedIn"></a>
+      <a href="mailto:matthew.nazim01@gmail.com" class="magnetic" aria-label="Email">@</a>
+    </div>
+    <div class="footer-copy">© <span id="footerYear"></span> Matthew Nazim Umar Syarif. Built with care.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
